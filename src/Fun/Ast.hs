@@ -7,6 +7,7 @@
 module Fun.Ast
   ( Name
   , Expr(..)
+  , Literal(..)
   , BinOp(..)
   ) where
 
@@ -17,14 +18,20 @@ type Name = String
 
 -- | Expressions.
 data Expr =
-    IntLit      Integer
-  | BoolLit     Bool
+    Literal     Literal
   | Var         Name
   | Fn          Name  Expr
   | App         Expr  Expr
   | Let         Name  Expr  Expr
   | IfThenElse  Expr  Expr  Expr
   | Op          BinOp Expr  Expr
+  deriving (Eq, Ord)
+
+
+-- | Builtin literal types.
+data Literal =
+    IntLit  Integer
+  | BoolLit Bool
   deriving (Eq, Ord)
 
 
