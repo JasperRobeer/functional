@@ -1,2 +1,7 @@
-# functional
-Type system for a functional toy language
+# Toy Functional Programming Language
+
+A type system for a functional toy language, inspired by the course on compiler
+construction that I followed at [Utrecht University](http://foswiki.cs.uu.nl/foswiki/Cco),
+and the writings of [Stephen Diehl](http://dev.stephendiehl.com/fun/006_hindley_milner.html).
+
+The type inference system is built on the Hindley-Milner type system.
