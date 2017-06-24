@@ -13,6 +13,9 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     Fun.Ast
+                     , Fun.PrettyPrint
+                     , PrettyPrint
   build-depends:       base >= 4.7 && < 5
+                     , pretty
   default-language:    Haskell2010
   ghc-options:         -W
