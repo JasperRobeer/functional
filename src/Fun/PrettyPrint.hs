@@ -30,13 +30,13 @@ instance Printable Literal where
 
 
 instance Printable BinOp where
-  pp OpAdd = text "+"
-  pp OpSub = text "-"
-  pp OpMul = text "*"
-  pp OpDiv = text "/"
-  pp OpEQ  = text "=="
-  pp OpNEQ = text "!="
-  pp OpLT  = text "<"
-  pp OpGT  = text ">"
-  pp OpLTE = text "<="
-  pp OpGTE = text ">="
+  pp Addition          = text "+"
+  pp Subtraction       = text "-"
+  pp Multiplication    = text "*"
+  pp Division          = text "/"
+  pp Equals            = text "=="
+  pp NotEquals         = text "!="
+  pp LessThan          = text "<"
+  pp GreaterThan       = text ">"
+  pp LessThanEquals    = text "<="
+  pp GreaterThanEquals = text ">="

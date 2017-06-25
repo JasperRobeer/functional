@@ -38,7 +38,7 @@ data Literal =
 -- | Builtin binary operations.
 data BinOp =
   -- Arithmetic operations '+', '-', '*', '/'
-    OpAdd | OpSub | OpMul | OpDiv
+    Addition | Subtraction | Multiplication | Division
   -- Relational operations '==', '!=', '<', '>', '<=', '>='
-  | OpEQ | OpNEQ | OpLT | OpGT | OpLTE | OpGTE
+  | Equals | NotEquals | LessThan | GreaterThan | LessThanEquals | GreaterThanEquals
   deriving (Eq, Ord)
